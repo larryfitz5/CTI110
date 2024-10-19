@@ -1,4 +1,3 @@
-# Title block
 # Angel Liriano
 # 10-11-24
 # P2HW2_LirianoAngel
