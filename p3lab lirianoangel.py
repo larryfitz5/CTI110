@@ -26,33 +26,37 @@ cents = cents % 5
 # Remaining cents are pennies
 pennies = cents
 
-# Display the result, considering singular and plural forms
-if dollars > 0:
-    if dollars == 1:
-        print(f"{dollars} dollar")
-    else:
-        print(f"{dollars} dollars")
+# Check if no money was entered
+if dollars == 0 and quarters == 0 and dimes == 0 and nickels == 0 and pennies == 0:
+    print("No change")  # Handle the case when the input is 0.00
+else:
+    # Display the result, considering singular and plural forms
+    if dollars > 0:
+        if dollars == 1:
+            print(f"{dollars} dollar")
+        else:
+            print(f"{dollars} dollars")
 
-if quarters > 0:
-    if quarters == 1:
-        print(f"{quarters} quarter")
-    else:
-        print(f"{quarters} quarters")
+    if quarters > 0:
+        if quarters == 1:
+            print(f"{quarters} quarter")
+        else:
+            print(f"{quarters} quarters")
 
-if dimes > 0:
-    if dimes == 1:
-        print(f"{dimes} dime")
-    else:
-        print(f"{dimes} dimes")
+    if dimes > 0:
+        if dimes == 1:
+            print(f"{dimes} dime")
+        else:
+            print(f"{dimes} dimes")
 
-if nickels > 0:
-    if nickels == 1:
-        print(f"{nickels} nickel")
-    else:
-        print(f"{nickels} nickels")
+    if nickels > 0:
+        if nickels == 1:
+            print(f"{nickels} nickel")
+        else:
+            print(f"{nickels} nickels")
 
-if pennies > 0:
-    if pennies == 1:
-        print(f"{pennies} penny")
-    else:
-        print(f"{pennies} pennies")
+    if pennies > 0:
+        if pennies == 1:
+            print(f"{pennies} penny")
+        else:
+            print(f"{pennies} pennies")
